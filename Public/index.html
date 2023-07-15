@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth System</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine/dist/alpine.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+
+    <div x-data="{ 
+        username: '',
+        email: '',
+        password: '',
+        resulte: ''
+     }">
+        
+        <input type="text" x-model="username" placeholder="username">
+        <input type="email" x-model="email" placeholder="email">
+        <input type="password" x-model="password" placeholder="passowrd">
+
+        <button type="button" @click="create()">Create</button>
+        <p x-text="resulte"></p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "user-authentication-system",
+  "version": "0.0.1 Alpha",
+  "description": "A user authentication system using expressjs and json as a database",
+  "main": "server.js",
+  "repository": "https://github.com/TariqJandaly/User-Authentication-System.git",
+  "author": "TariqJandaly <tariq.jandaly@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  }
+}
